@@ -22,6 +22,13 @@
     <h1>D6 Dice Roller</h1>
     
     <button onclick="">Roll D6</button>
-    <div id="result1"></div>
+    <div id="result"></div>
 </body>
+<script>
+    function rollD6() {
+        const resultBox = document.getElementById('result');
+        const result = rolld6(); // Calling the exported function
+        resultBox.textContent = `Result: ${result}`;
+    }
+</script>
 </html>
